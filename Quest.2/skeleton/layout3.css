@@ -9,7 +9,7 @@ body {
 }
 
 .contents {
-	
+
 }
 
 .main {
@@ -26,6 +26,9 @@ body {
 .main header {
 	background-color: lightgray;
 height: 30px;
+left: 200px;
+right: 300px;
+overflow: hidden;
 
 }
 
