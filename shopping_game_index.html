@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="style.css" />
+  
+  </head>
+  <body>
+
+    <img src="img/logo.png" alt="Logo" class = "shoplogo" onclick="showItems(item_list)">
+    
+ 
+    <section class=" buttons">
+        <button class="btn">
+          <img src="img/blue_t.png" alt="tshirt" class="imgbtn" id="t" onclick="showItems(SelectType('tshirt'))"/>
+        </button>
+        <button class="btn">
+          <img src="img/blue_p.png" alt="pants" class="imgbtn" id="p" onclick="showItems(SelectType('pants'))"/>
+        </button>
+        <button class="btn">
+          <img src="img/blue_s.png" alt="skirt" class="imgbtn" id="s" onclick="showItems(SelectType('skirt'))"/>
+        </button>
+        <button class="btn colorbtn blue" id="blue" onclick="showItems(SelectType('blue'))">Blue</buttps>
+        <button class="btn colorbtn pink" id="pink" onclick="showItems(SelectType('pink'))">Pink</buttsn>
+        <button class="btn colorbtn yellow" id="yellow" onclick="showItems(SelectType('yellow'))">Yellow</button>
+
+    </section>
+    <section>
+      <ul class="items"> 
+      </ul>
+    </section>
+    <script src="data.js" defer></script>
+  </body>
+
+</html>
