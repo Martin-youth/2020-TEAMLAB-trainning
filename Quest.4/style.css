@@ -1,0 +1,114 @@
+:root {
+  /* color */
+  --color-black: #3f454d;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+
+  /* size */
+  --base-space : 8px;
+  --size-button : 40px;
+  --font-size : 14px;
+  --size-border: 4px;
+  --size-image : 50px;
+  /* animation */
+  --size-animation-duration: 300ms;
+}
+
+
+body{
+  height:100vp;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  cursor: pointer;
+  transition: transform var(--size-animation-duration) ease;
+}
+
+.logo:hover{
+  transform: scale(1.1);
+}
+
+.btn{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform var(--size-animation-duration) ease;
+  margin-right: var(--base-space);
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.imgbtn{
+  width: var(--size-button);
+  height: var(--size-button);
+}
+
+.colorbtn {
+  font-size : var(--font-size);
+  border-radius: var(--size-border);
+  display: inline-block;
+  padding-top: var(--base-space);
+  padding-bottom: var(--base-space);
+  padding-left: var(--size-border);
+  padding-right: var(--size-border);
+}
+
+.blue {
+  background-color: var(--color-blue);
+
+}
+
+.pink {
+  background-color: var(--color-pink);
+}
+
+.yellow {
+  background-color: var(--color-yellow);
+}
+
+
+.items{ 
+  width: 100%;
+  height:100%;
+  list-style: none;
+  padding-left: 0;
+  overflow-y: scroll, none;
+  align-items: center;
+  justify-items: center;
+  flex-shrink: 2;
+  
+}
+
+.item {
+  width: calc(var(--size-image)*10);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: var(--base-space);
+  margin-bottom: var(--base-space);
+}
+
+.item_image{
+  width: var(--size-image);
+  height: var(--size-image);
+}
+
+.item_description {
+  margin-left: var(--base-space);
+  font-size: var(--font-size);
+}
